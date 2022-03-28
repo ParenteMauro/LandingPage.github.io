@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Bebas Neue";
+  scroll-behavior: smooth;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to left, #ad5389, #3c1053);
+
+  background-position: top buttom;
+}
+#header {
+  z-index: 1000;
+
+  top: 0;
+  background-color: #f8f4f9;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 4px 2px -2px rgb(85, 84, 84);
+  position: fixed;
+}
+.marca {
+  display: flex;
+  width: 40%;
+}
+#nombre {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1%;
+  margin-right: 69%;
+}
+#logo {
+  height: auto;
+  width: 50px;
+  margin-left: 3%;
+}
+.header-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+ul li {
+  font-size: 1.2rem;
+  margin-left: 4%;
+  transition: 0.5s;
+}
+
+ul li:hover {
+  text-decoration: underline;
+  transform: scale(1.2);
+}
+
+.eslogan-imagen {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  font-size: 75px;
+  align-items: center;
+  text-align: justify;
+  height: 100vh;
+  width: 100%;
+  margin: 60px auto;
+}
+
+#eslogan {
+  animation: mover 2s;
+  margin-right: 2%;
+  color: #f8f4f9;
+  padding: 50px;
+  animation: mov1 1.5s;
+}
+.imagen_container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  animation: mov2 1.5s;
+}
+
+@keyframes mov1{
+  0%{
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes mov2{
+  0%{
+    transform: translateX(200%);
+  }
+}
+
+#QuienesSomos {
+  display: grid;
+  width: auto;
+  padding: 20px;
+  background-color: #f8f4f9;
+  border-radius: 10px;
+  margin: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+.info_somos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: justify;
+  
+}
+.info_h1 {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.info-p{
+  font-family: "Roboto", sans-serif;
+
+}
+.link-contact {
+  margin-top: 20px;
+}
+.div_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  grid-template-rows: 1fr;
+  align-items: center;
+
+  gap: 20px;
+  margin: 0 20px 50px;
+}
+.card_img {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  height: 260px;
+  background-color: #e6bccd;
+  border-radius: 10px 10px 0 0;
+}
+.card_box {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.card_info {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+.card_info h2 {
+  font-size: 1.3rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.card_info p {
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+#emailEmpresa{
+  background-color: #28262C;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+}
+#contactanos{
+  text-align: center;
+  background-color: #f8f4f9;
+  width: 84%;
+  margin-left: 8%;
+  font-size: 20px;
+  border-radius: 10px;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+#email{
+  color: white;
+}
+
+input[type=text]{
+  width: 70%;
+}
+
+
+.footer{
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f4f9;
+
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (max-width:1200px){
+  .eslogan-imagen{
+    grid-template-columns:none;
+    margin: auto;
+    
+  }
+}
+
+@media screen and (max-width:786px){
+  .eslogan-imagen{
+   height: auto;
+  }
+  .header-nav{
+    margin-right: 5%;
+  }
+  .header-nav li{
+    font-size: 0.9rem;
+  }
+
+  #eslogan{
+    font-size: 2rem;
+  }
+  #imagen-principio{
+    width: 80%;
+    height:auto;
+
+  }
+  #QuienesSomos{
+    justify-content: center;
+    
+  }
+  #imagenCard{
+    width: 80%;
+    height: auto;
+  }
+  .info_h1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .info-p{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2%;
+  }
+  .card_container{
+    margin: auto;
+    margin-bottom: 25px;
+  }
+  #contactanos{
+    margin-bottom: 25px;
+  }
+  
+}
+
+
+@media screen and (max-width:360px){
+  .eslogan-imagen{
+    margin-top: 5%;
+    height: auto;
+  }
+  #QuienesSomos{
+    grid-template-columns: none;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 0px;
+  }
+  .card_container{
+    grid-template-columns: none;
+  }
+  .card_box{
+    width: 95%;
+  }
+  .card_img{
+    width: 100%;
+    height: auto;
+  }
+  .testi_foto{
+    width: 80%;
+    height: auto;
+  }
+}
