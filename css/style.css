@@ -227,6 +227,7 @@ input[type=text]{
 
 @media screen and (max-width:786px){
   .eslogan-imagen{
+   margin-top: 5%;
    height: auto;
   }
   .header-nav{
